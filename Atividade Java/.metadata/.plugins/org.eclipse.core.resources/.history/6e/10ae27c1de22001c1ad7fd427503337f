@@ -1,0 +1,30 @@
+package com.example.servicocliente.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.servicocliente.model.Cliente;
+import com.example.servicocliente.repository.ClienteRepository;
+
+@RestController
+@RequestMapping("/cliente")
+public class ClienteController {
+	
+	@Autowired
+	private ClienteRepository clienteRepository;
+	
+	@GetMapping("/teste")
+	public String teste() {
+		
+		return "Olá Mundo!";
+	}
+	
+	@GetMapping()
+	public List<Cliente> get(){
+		return this.clienteRepository.findAll();
+	}
+}

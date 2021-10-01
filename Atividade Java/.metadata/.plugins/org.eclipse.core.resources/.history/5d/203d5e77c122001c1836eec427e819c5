@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="servico-cliente">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <property name="context-root" value="servico-cliente"/>
+        <property name="java-output-path" value="/servico-cliente/target/classes"/>
+    </wb-module>
+</project-modules>

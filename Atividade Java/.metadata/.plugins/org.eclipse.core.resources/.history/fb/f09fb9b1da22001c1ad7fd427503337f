@@ -1,0 +1,1 @@
+spring.data.mongodb.uri=mongodb+srv://Nick12345:<password>@cluster0.78qlg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

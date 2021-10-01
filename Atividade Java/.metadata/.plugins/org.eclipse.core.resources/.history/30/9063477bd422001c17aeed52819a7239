@@ -1,0 +1,20 @@
+package com.example.servicocliente.model;
+
+import java.io.Serializable;
+import java.util.Objects;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Equals
+public class Cliente implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	private String id;
+	private String nome;
+	
+	
+
+}
